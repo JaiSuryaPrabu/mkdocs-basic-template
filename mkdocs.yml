@@ -1,0 +1,28 @@
+site_name: Basic Template
+theme: 
+  name : material
+  language: en
+  # for user defined logo
+  # logo: path/of/the/image.png
+
+  # color palette
+  palette: 
+    # light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+      # primary color
+      primary: blue
+      # interactable text color
+      accent: indigo
+  features:
+  # navigations
+    - navigation.expand
+    - navigation.top
+  # table of content
+    - toc.integrate
