@@ -21,3 +21,7 @@ This **repository** provides the basic template for the documentation. It contai
 * Footer 
     * Social links 
 * Markdown for `python`
+
+## Reference
+1. https://github.com/james-willett/mkdocs-material-youtube-tutorial/
+2. https://squidfunk.github.io/mkdocs-material/getting-started/
