@@ -1,4 +1,10 @@
-site_name: Basic Template
+site_name: Documentation
+site_url: https://www.basictemplate.io
+site_description: Basic Template for documentation
+
+repo_url: https://github.com/JaiSuryaPrabu/mkdocs-basic-template
+repo_name: JaiSuryaPrabu/mkdocs-basic-template
+
 theme: 
   name : material
   language: en
@@ -12,6 +18,7 @@ theme:
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
+    # dark mode
     - scheme: slate
       toggle:
         icon: material/brightness-4
@@ -20,9 +27,47 @@ theme:
       primary: blue
       # interactable text color
       accent: indigo
+
   features:
   # navigations
     - navigation.expand
     - navigation.top
+    - navigation.tabs
+    - navigation.sections
   # table of content
-    - toc.integrate
+    - toc.integrate 
+  # code
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+  # search
+    - search.highlight
+    - search.suggest
+  # header
+    - header.autohide
+
+extra:
+  social:
+    - icon : fontawesome/brands/github-alt
+      link : https://github.com/JaiSuryaPrabu
+    - icon : fontawesome/brands/twitter
+      link : https://twitter.com/__Jaisurya
+    - icon : fontawesome/brands/linkedin
+      link : https://www.linkedin.com/in/jaisurya-prabakaran-3619aa226/
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg 
